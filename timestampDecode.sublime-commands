@@ -1,0 +1,9 @@
+[
+	{"caption": "Convert a timestamp in date", "command": "timestamp_decode"},
+	{"caption": "Convert a date in timestamp", "command": "timestamp_encode"},
+
+	{"caption": "date2timestamp (YYYY/MM/DD)", "command": "timestamp_encode_real", "args":{"format": "%Y/%m/%d"}},
+	{"caption": "timestamp2date (YYYY/MM/DD)", "command": "timestamp_decode_real", "args":{"format": "%Y/%m/%d"}},
+	{"caption": "timestamp2date (YYYY/MM/DD HH:SS)", "command": "timestamp_decode_real", "args":{"format": "%Y/%m/%d %H:%M:%S"}},
+	{"caption": "date2timestamp (YYYY/MM/DD HH:SS)", "command": "timestamp_encode_real", "args":{"format": "%Y/%m/%d %H:%M:%S"}}
+]

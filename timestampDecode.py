@@ -1,4 +1,4 @@
-import sublime, sublime_plugin, pytz, time
+import sublime, sublime_plugin, time
 from datetime import datetime
 from calendar import timegm
 
@@ -62,7 +62,7 @@ class TimestampDecodeRealCommand(sublime_plugin.TextCommand):
 				timestamp = float(selected)
 				if timestamp > 31536000000:
 					timestamp = timestamp / 1000
-				txt = datetime.fromtimestamp(timestamp, tz=pytz.utc).strftime(format)
+				txt = datetime.fromtimestamp(timestamp).strftime(format)
 			except ValueError:
 				txt = "Invalid timestamp"
 

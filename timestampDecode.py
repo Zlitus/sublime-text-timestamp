@@ -75,8 +75,6 @@ class TimestampEncodeRealCommand(sublime_plugin.TextCommand):
 				s = self.view.word(s)
 
 			selected = self.view.substr(s)
-			print(selected)
-			print(format)
 
 			try:
 				txt = str(round(timegm(datetime.strptime(str(selected), format).timetuple())))

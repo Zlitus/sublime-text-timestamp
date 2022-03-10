@@ -5,15 +5,10 @@ from calendar import timegm
 class TimestampEncodeCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		i_panel = self.view.window().show_input_panel(
-			# caption
 			"Date format string:",
-			# initial_text
 			"%Y/%m/%d %H:%M:%S",
-			# on_done
 			self.convert,
-			# on_change (unused)
 			None,
-			# on_cancel
 			self.convert
 		)
 
@@ -28,15 +23,10 @@ class TimestampEncodeCommand(sublime_plugin.TextCommand):
 class TimestampDecodeCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		i_panel = self.view.window().show_input_panel(
-			# caption
 			"Date format string:",
-			# initial_text
 			"%Y/%m/%d %H:%M:%S",
-			# on_done
 			self.convert,
-			# on_change (unused)
 			None,
-			# on_cancel
 			self.convert
 		)
 
